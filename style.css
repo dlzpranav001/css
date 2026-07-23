@@ -1,11 +1,18 @@
-/* Universal Reset */
+/* =========================
+   Universal Reset
+========================= */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Body */
+
+/* =========================
+   Body
+========================= */
+
 body {
     background-color: #f4f4f9;
     color: #333333;
@@ -13,123 +20,201 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+
+/* =========================
+   Header
+========================= */
+
 header {
     background-color: #1e293b;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 
-/* Typography */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f9;
-    color: #333333;
-}
 
 /* Paragraphs */
+
 p {
     line-height: 1.6;
 }
 
-/* Navigation Links */
-nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #ffffff;
-}
 
-/* Hover Effect */
-nav ul li a:hover {
-    color: #38bdf8;
-}
-/* Header */
-header {
-    padding: 25px;
-}
+/* =========================
+   Navigation Flexbox
+========================= */
 
-/* Navigation */
 nav {
     padding: 15px;
 }
 
-/* Main Container */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+
+/* =========================
+   Main Container
+========================= */
+
 main {
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* Sections */
+
+/* =========================
+   Sections
+========================= */
+
 section {
     padding: 20px;
     margin-bottom: 20px;
 }
 
-/* About Section */
+
+/* =========================
+   About Section
+========================= */
+
 #about {
+
     background-color: #eef6ff;
     border-left: 6px solid #0d6efd;
     padding: 20px;
+
 }
+
+
 /* =========================
    Table Styling
 ========================= */
 
 .data-table {
+
     width: 100%;
     border-collapse: collapse;
+
 }
+
 
 .data-table th,
 .data-table td {
+
     padding: 12px;
     text-align: left;
+
 }
+
 
 .data-table th {
+
     background-color: #1e293b;
     color: white;
+
 }
+
 
 .data-table td {
+
     border-bottom: 1px solid #cccccc;
+
 }
 
+
 /* =========================
-   Form Styling
+   Form Container
 ========================= */
 
 .form-container {
+
     background-color: white;
     border: 1px solid #cccccc;
     border-radius: 8px;
     padding: 20px;
+
 }
+
+
+/* =========================
+   Form Layout Flexbox
+========================= */
+
+.form-group {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+
+}
+
 
 input[type="text"],
 select {
+
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
+
 }
+
 
 input[type="text"]:focus,
 select:focus {
+
     outline: 2px solid #0d6efd;
+
 }
 
+
+/* =========================
+   Submit Button
+========================= */
+
 #submit-btn {
+
     background-color: #0d6efd;
     color: white;
     border: none;
     padding: 12px 20px;
     cursor: pointer;
     font-weight: bold;
+
 }
 
+
 #submit-btn:hover {
+
     background-color: #084298;
+
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+
 }
